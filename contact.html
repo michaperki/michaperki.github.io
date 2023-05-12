@@ -16,22 +16,20 @@
     <div class="content">
       <!-- Start Navigation -->
       <header>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <h1 class="logo-text"><span>M</span>ichael <span>P</span>erkins</h1>
+        <nav>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
       </header>
-      <div class="nav-list">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </div>
       <!-- End Navigation -->
       <div class="main">
         <div class="main-content">
@@ -60,21 +58,5 @@
         </div>
       </footer>
     </div>
-    <script>
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(".nav-list").toggleClass("show");
-          $(".hamburger").toggleClass("active");
-        });
-      });
-
-      // I want the hamburger to turn into an X when clicked
-      // how do I do that?
-      // answer: use the toggleClass method to add and remove the active class
-      // when the hamburger is clicked
-      // then use CSS to style the hamburger and the X
-      // what does the CSS look like?
-      // .hamburger.active span:nth-child(1) {
-    </script>
   </body>
 </html>
