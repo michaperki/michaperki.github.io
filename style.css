@@ -408,6 +408,23 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .portfolio-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .portfolio-item {
+        width: 40%;
+        margin: 1rem;
+    }
+
+    .portfolio-item .buttons a {
+        margin: 0;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        white-space: nowrap;
+    }
 }
 
 /* portfolio-detail styling */
