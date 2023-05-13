@@ -222,15 +222,20 @@ header {
   text-align: center;
 }
 
-.main-content .title em {
+.main-content .title .quote {
   color: var(--dark-blue);
   font-style: normal;
-  font-weight: lighter;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
 }
 
-.main-content .title span {
+.main-content .title .attribution {
   color: var(--dark-blue);
-  font-weight: bold;
+  font-weight: lighter;
+  font-style: italic;
+  margin: 0px;
+  padding: 0px;
 }
 
 .main-content .description {
@@ -408,23 +413,23 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    .portfolio-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    
-    .portfolio-item {
-        width: 40%;
-        margin: 1rem;
-    }
+  .portfolio-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-    .portfolio-item .buttons a {
-        margin: 0;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        white-space: nowrap;
-    }
+  .portfolio-item {
+    width: 40%;
+    margin: 1rem;
+  }
+
+  .portfolio-item .buttons a {
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+  }
 }
 
 /* portfolio-detail styling */
