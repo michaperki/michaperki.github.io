@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+echo "enter a commit message"
+read commitMessage
+git add .
+git commit -m "$commitMessage"
+git push origin gh-pages
+git checkout main
+git merge gh-pages
+git checkout gh-pages
+echo "pushed to gh-pages"
