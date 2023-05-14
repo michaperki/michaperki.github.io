@@ -251,6 +251,7 @@ header {
   justify-content: center;
   margin: var(--margin);
   padding: var(--padding);
+  min-height: 300px;
 }
 
 .splash-image {
