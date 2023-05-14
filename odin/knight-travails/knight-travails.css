@@ -11,11 +11,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    min-width: 410px;
 }
 
-.table {
-
-} 
 
 .row {
     display: block;
