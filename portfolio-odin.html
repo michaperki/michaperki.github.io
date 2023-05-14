@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3da0d1502b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Michael Perkins</title>
+  </head>
+  <body>
+    <div class="content">
+      <!-- Start Navigation -->
+      <header>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <h1 class="logo-text"><span>M</span>ichael <span>P</span>erkins</h1>
+      </header>
+      <div class="nav-list">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- End Navigation -->
+      <div class="main">
+        <div class="main-content">
+          <h1 class="project-title">The Odin Project</h1>
+          <div class="project-image-container">
+            <img class="project-image" src="images/portfolio-odin.png" alt="" />
+          </div>
+          <h2 class="project-subtitle">Project Description</h2>
+          <div class="project-description">
+            <p>
+              This is a collection of projects I completed while working through
+              the curriculum at
+              <a href="https://www.theodinproject.com/">The Odin Project</a>.
+            </p>
+            <div class="carousel">
+              <button class="carousel-btn" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="carousel-content">
+                <div class="carousel-item">
+                  <h2>Knight's Travail</h2>
+                  <img src="images/knight-travails.jpg" alt="" />
+                  <p>
+                    This project is a solution to the Knight's Travail problem
+                    using a breadth-first search algorithm.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <h2>Knight's Travail</h2>
+                  <img src="images/knight-travails.jpg" alt="" />
+                  <p>
+                    This project is a solution to the Knight's Travail problem
+                    using a breadth-first search algorithm.
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-btn" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <a
+            href="https://github.com/michaperki/michaperki.github.io"
+            class="project-link"
+            >View on GitHub</a
+          >
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <h3>Michael Perkins</h3>
+        <ul class="socials">
+          <li>
+            <a href="https://www.linkedin.com/in/michaelperkins18/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.github.com/michaperki"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(".nav-list").toggleClass("show");
+          $(".hamburger").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

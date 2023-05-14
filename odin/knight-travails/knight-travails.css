@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* center the content of the body */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.table {
+
+} 
+
+.row {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: green!important;
+}
+
+.selected {
+    /* add a knight to the cell */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chess_nlt45.svg/45px-Chess_nlt45.svg.png");
+
+}

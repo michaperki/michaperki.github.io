@@ -211,6 +211,7 @@ header {
   justify-content: center;
 
   margin: 0 auto;
+  min-width: 350px;
 }
 
 .main-content .title {
@@ -288,6 +289,8 @@ footer {
   margin: var(--margin);
   margin: 0 auto;
   position: relative;
+  min-width: 350px;
+  bottom: 0;
 }
 
 .footer-content {
@@ -344,7 +347,7 @@ footer {
   margin: var(--margin);
   padding: var(--padding);
   margin: 0 auto;
-  min-width: 400px;
+  min-width: 350px;
 }
 
 .portfolio-item {
@@ -397,6 +400,11 @@ footer {
   text-decoration: none;
   background-color: var(--pink);
   color: var(--dark-blue);
+  text-align: center;
+}
+
+.portfolio-item .buttons .source-code-button {
+  min-width: 110px;
 }
 
 .portfolio-item .buttons a:hover {
@@ -480,6 +488,70 @@ footer {
 
 .project-link:hover {
   background-color: var(--red);
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.carousel #prevBtn,
+.carousel #nextBtn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--pink);
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.carousel #prevBtn:hover,
+.carousel #nextBtn:hover {
+  background-color: var(--red);
+}
+
+.carousel #prevBtn {
+  left: 0;
+}
+
+.carousel #nextBtn {
+  right: 0;
+}
+
+
+.carousel-item {
+  width: 80%;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin: 0 auto;
+  padding: var(--padding);
+  margin: var(--margin);
+  padding: var(--padding);
+  margin: 0 auto;
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+}
+
+.carousel-item h2 {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  margin: var(--margin);
+  padding: var(--padding);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin: 0 auto;
+  padding: var(--padding);
 }
 
 @media screen and (min-width: 768px) {
