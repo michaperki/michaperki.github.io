@@ -497,33 +497,6 @@ footer {
   align-items: center;
 }
 
-.carousel #prevBtn,
-.carousel #nextBtn {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: var(--pink);
-  color: var(--dark-blue);
-  font-size: 1.5rem;
-  text-align: center;
-  text-decoration: none;
-  transition: var(--transition);
-}
-
-.carousel #prevBtn:hover,
-.carousel #nextBtn:hover {
-  background-color: var(--red);
-}
-
-.carousel #prevBtn {
-  left: 0;
-}
-
-.carousel #nextBtn {
-  right: 0;
-}
-
-
 .carousel-item {
   width: 80%;
   height: auto;
@@ -552,6 +525,37 @@ footer {
   border-radius: var(--border-radius);
   margin: 0 auto;
   padding: var(--padding);
+}
+
+.carousel-item p {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  margin: var(--margin);
+  padding: var(--padding);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel-item .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--margin);
+  padding: var(--padding);
+}
+
+.carousel-item .buttons a {
+  margin: 0 1rem;
+  padding: 0.4rem;
+  border-radius: var(--border-radius);
+  color: var(--light-blue);
+  font-size: 1rem;
+  transition: var(--transition);
+  text-decoration: none;
+  background-color: var(--pink);
+  color: var(--dark-blue);
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
