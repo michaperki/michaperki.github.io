@@ -1,0 +1,23 @@
+{
+  "name": "michaperki.github.io",
+  "version": "1.0.0",
+  "description": "My resume, portfolio, and blog",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaperki/michaperki.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaperki/michaperki.github.io/issues"
+  },
+  "homepage": "https://github.com/michaperki/michaperki.github.io#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
