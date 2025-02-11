@@ -10,6 +10,9 @@ import MoveHistory from './components/MoveHistory';
 import { checkWin, getAvailableRow } from './utils/gameLogic';
 import "./styles.css";
 
+// New backend endpoint
+const API_BASE = "https://connect4-backend-fa34b2d6116b.herokuapp.com";
+
 const ROWS = 6;
 const COLUMNS = 7;
 const createEmptyBoard = () =>
@@ -64,8 +67,8 @@ function App() {
     setIsAIMoving(true);
     const currentConfig = players[currentPlayer.toString()];
     const endpoint = currentConfig.modelId
-      ? `/api/ai-move/${currentConfig.modelId}`
-      : '/api/move';
+      ? `${API_BASE}/api/ai-move/${currentConfig.modelId}`
+      : `${API_BASE}/api/move`;
     fetch(endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
