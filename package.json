@@ -1,5 +1,6 @@
 {
   "name": "connect4-react-app",
+  "homepage": "https://michaperki.github.io",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
