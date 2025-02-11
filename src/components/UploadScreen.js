@@ -2,6 +2,9 @@
 // src/components/UploadScreen.js
 import React, { useState } from 'react';
 
+// Use the Heroku backend endpoint
+const API_BASE = "https://connect4-backend-fa34b2d6116b.herokuapp.com";
+
 const UploadScreen = ({ onStartGame }) => {
   // mode can be "human-vs-ai", "ai-vs-ai", or "ai-battle"
   const [mode, setMode] = useState("human-vs-ai");
@@ -71,8 +74,9 @@ const UploadScreen = ({ onStartGame }) => {
     }
     updatePlayer(playerNum, { uploading: true, message: "" });
     const formData = new FormData();
+    // Use field name 'model' and accept only Python files
     formData.append('model', player.file);
-    fetch('/api/upload', {
+    fetch(`${API_BASE}/api/upload`, {
       method: 'POST',
       body: formData,
     })
